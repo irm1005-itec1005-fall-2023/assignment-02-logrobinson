@@ -22,12 +22,197 @@
 </head>
 
 <body>
-  <!--
+  <header>
+    <div class="header-logo">
+    <img src="./images/logify_logo.png" alt="Logify Company Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+  <main>
+    <div class="opening-title">
+      <img src="./images/album_cover_collage.png" alt="Collage of 25 Album Covers" />
+      <div class="opening-title-text">
+      <h1>Welcome to LOGify.</h1>
+      <h2>A Glimpse of Logan's Music Taste.</h2>
+    </div>
+      </div>
+      <div class="opening-nav">
+      <p>
+        Are you looking to discover new music? Want a place where you can read unprofessional music reviews? Ever
+        wondered what’s playing in Logan’s headphones? LOGify is the place for you! Checkout the sections to learn
+        more.
+      </p>
+      <ul>
+        <li><a href="#album_review">Most Recent Album Review</a></li>
+        <li><a href="#most_listened">This Month's Most Listened</a></li>
+        <li><a href="#favourites">All Time Favs</a></li>
+        <li><a href="#form">Listening Recommendation Form</a></li>
+      </ul>
+    </div>
 
-  -->
-  <h1>Assignment 02</h1>
+    <div class="blonde">
+      <h2 id="album_review">Most Recent Album Review</h2>
+      <div class="blonde-content">
+      <img src="./images/blonde_album_cover.jpg" alt="blonde album cover"/>
+      <div class="blonde-content-text">
+      <h3>Frank Ocean: Blonde</h3>
+      <p>This album is beloved by so many, including me. This is such a good album oh my goodness I can't even describe
+        it. Terrific.
+        Epic. Sad. Soulcrushing. Insane. Devastating. Gosh I love this album. I can't even choose a favourite song,
+        they're all soooooo good. Five out of five stars. Ten out of ten. A++.</p>
+      </div>
+      </div>
+      </div>
+
+    <div class="top-songs">
+      <h2 id="most_listened">
+        This Month's Most Listened to Songs
+      </h2>
+      <div class="top-songs-intro">
+      <p>With websites like <a href="https://www.last.fm/">last.fm</a>, I'm able to see my own spotify listening stats.
+        These songs are the ones that
+        I've been listening to the most this month.</p>
+        </div>
+      <div class="table">
+        <h3>Most Listened To This Month:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Title</th>
+              <th>Artist</th>
+              <th>Song Length</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Baby Blue</td>
+              <td>Badfinger</td>
+              <td>3:37</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Once I was</td>
+              <td>Tim Buckley</td>
+              <td>3:23</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Shadow People</td>
+              <td>Dr. Dog</td>
+              <td>4:13</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Life's a Bitch</td>
+              <td>Nas</td>
+              <td>3:31</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Nothing's New</td>
+              <td>Rio Romeo</td>
+              <td>3:31</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="fav-albums">
+      <h2 id="favourites">My All-Time Favourite Albums</h2>
+      <div class="fav-albums-content">
+      <img src="./images/top_album_covers.png" alt="Collage of Four Album covers" />
+      <ul>
+        <li>A Charlie Brown Christmas - Vince Guaraldi Trio</li>
+        <li>Punisher - Phoebe Bridgers</li>
+        <li>What's Going On - Marvin Gaye</li>
+        <li>The New Abnormal - The Strokes</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="form-full">
+      <div class="form-intro">
+        <h2 id="form">Music Recommendation Form</h2>
+        <p>Do you have some music in mind that you think I should listen to? Let me know by using the form below! Please
+          also leave your contact info so that I can respond to your comments and maybe even credit you in my next
+          review!
+        </p>
+      </div>
+      <section>
+        <form>
+          <fieldset>
+            <legend>Music Recommendations:</legend>
+
+            <label for="type">Recommendation type:</label>
+            <select id="type" name="type" required>
+              <option value="">select option</option>
+              <option value="Album">Album</option>
+              <option value="ep">EP</option>
+              <option value="Single/Song">Single/Song</option>
+            </select>
+
+            <label for="artist">Artist(s):</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <br />
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"
+              placeholder="You should listen to this because..."></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Contact Info:</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required/>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required/>
+
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contact_phone" name="contact_method" value="contact_phone" />
+            <label for="contact_phone">Phone</label>
+            <input type="radio" id="contact_email" name="contact_method" value="contact_email" />
+            <label for="contact_email">Email</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Submit Form:</legend>
+            <input type="submit" value="Submit Recommendation" />
+          </fieldset>
+    
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <img src="./images/logify_logo.png" alt="Logify Company Logo" />
+    <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+    <p>loganrobinson@cmail.carleton.ca</p>
+    <p>&copy; 2023</p>
+  </footer>
 </body>
 
 </html>
