@@ -206,6 +206,15 @@ header ul li a:hover {
   font-size:1.3rem;
 }
 
+.top-songs-intro a{
+  text-decoration: none;
+  color:#1AB13E;
+}
+
+.top-songs-intro a:hover{
+  text-decoration: underline;
+}
+
 .table {
   display: flex;
   flex-direction: column;
@@ -252,20 +261,26 @@ tbody tr {
   display: flex;
   background-color:#060e16;
   border-radius: 1rem;
-  margin:1rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  margin-left:4rem;
+  margin-right:4rem;
+  align-items: center;
+  justify-content:flex-start;
 }
 
 .fav-albums-content ul li{
   display: flex;
-  background-color: darkred;
+  background-color:black;
   padding: 1.7rem;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
   font-size: 1.3rem;
 }
 
 .fav-albums img {
-  max-width:40%;
+  max-width:45%;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
@@ -273,6 +288,7 @@ tbody tr {
 .form-full {
   display: flex;
   background-color: black;
+  padding:2rem;
 }
 
 .form-intro {
@@ -284,7 +300,7 @@ tbody tr {
 }
 
 .form-intro h2{
-  font-size: 4rem;
+  font-size:4rem;
   text-align: right;
 }
 
@@ -302,9 +318,6 @@ form {
   margin: 1rem;
 }
 
-form fieldset:nth-child(1){
-  background-color:#1e2420;
-}
 
 footer img {
   max-width: 13%;
