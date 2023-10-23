@@ -16,7 +16,6 @@ body {
 header {
   background-color:#1AB13E;
   padding: 0.5rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,7 +164,6 @@ header ul li a:hover {
 
 .blonde-content p {
   display:flex;
-  background-color: ;
   font-size: 1.5rem;
   color:#321709;
 }
